@@ -1,0 +1,39 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="420" fill="url(#bg)"/>
+  <g opacity="0.16">
+    <path d="M0 80 C180 20 300 140 480 80 S820 20 1280 90" fill="none" stroke="#00f5ff" stroke-width="3"/>
+    <path d="M0 190 C220 120 320 250 520 190 S860 120 1280 210" fill="none" stroke="#22c55e" stroke-width="3"/>
+    <path d="M0 305 C180 250 360 350 550 310 S900 240 1280 330" fill="none" stroke="#facc15" stroke-width="3"/>
+  </g>
+  <g transform="translate(85,85)">
+    <circle cx="125" cy="125" r="110" fill="none" stroke="#0ea5e9" stroke-width="5" opacity="0.45"/>
+    <circle cx="125" cy="125" r="72" fill="none" stroke="#22c55e" stroke-width="4" opacity="0.55"/>
+    <circle cx="125" cy="125" r="34" fill="none" stroke="#00f5ff" stroke-width="3" opacity="0.80"/>
+    <rect x="75" y="97" width="100" height="70" rx="14" fill="#020617" stroke="#00f5ff" stroke-width="4" filter="url(#glow)"/>
+    <text x="125" y="145" text-anchor="middle" font-family="Arial" font-size="34" font-weight="800" fill="#e0f2fe">CSI</text>
+  </g>
+  <text x="340" y="135" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900" fill="#e0f2fe">EBS ESP32 CSI MOTION RADAR</text>
+  <text x="345" y="195" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#7dd3fc">ESP32 ile Wi‑Fi CSI Tabanlı Hareket Algılama Sistemi</text>
+  <text x="345" y="250" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#bbf7d0">📡 Verici ESP32  →  🚶 Hareket Alanı  →  📡 Alıcı ESP32  →  💻 Python Desktop</text>
+  <rect x="345" y="292" width="170" height="42" rx="21" fill="#0ea5e9" opacity="0.9"/>
+  <rect x="532" y="292" width="160" height="42" rx="21" fill="#16a34a" opacity="0.9"/>
+  <rect x="710" y="292" width="175" height="42" rx="21" fill="#ca8a04" opacity="0.9"/>
+  <text x="430" y="321" text-anchor="middle" font-family="Arial" font-size="18" font-weight="800" fill="white">CSI ANALİZ</text>
+  <text x="612" y="321" text-anchor="middle" font-family="Arial" font-size="18" font-weight="800" fill="white">ESP32</text>
+  <text x="797" y="321" text-anchor="middle" font-family="Arial" font-size="18" font-weight="800" fill="white">PYTHON UI</text>
+  <text x="345" y="375" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#94a3b8">github.com/ebubekirbastama/esp32-csi-motion-radar</text>
+</svg>
